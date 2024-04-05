@@ -1,29 +1,34 @@
-import { useState } from "react";
-
 export default function Nav() {
-  const [show, setShow] = useState(false);
-
-  function handleClick() {
-    setShow(!show);
-  }
   return (
     <div>
       <nav className="navbar">
-        <h1>Mexican Resturant</h1>
-        <button onClick={handleClick}>Options</button>
-        {show && (
-          <ul>
+        <h1>La Cantina</h1>
+        <h2>Est. 2024</h2>
+        <div className="dropdown">
+          <button
+            className="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          ></button>
+          <ul className="dropdown-menu dropdown-menu-end">
             <li>
-              <button>Start Order</button>
+              <a className="dropdown-item" href="#">
+                Start Order
+              </a>
             </li>
             <li>
-              <button>Menu</button>
+              <a className="dropdown-item" href="#">
+                Find Locations
+              </a>
             </li>
             <li>
-              <button>Contact Us</button>
+              <a className="dropdown-item" href="#">
+                Contact Us
+              </a>
             </li>
           </ul>
-        )}
+        </div>
       </nav>
     </div>
   );
