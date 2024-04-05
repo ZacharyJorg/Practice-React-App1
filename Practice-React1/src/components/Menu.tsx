@@ -12,15 +12,17 @@ export default function Menu() {
     {
       id: 2,
       name: "Bean and Cheese Burrito",
-      image: "",
+      image:
+        "https://www.isabeleats.com/wp-content/uploads/2020/12/bean-cheese-burritos-small-13.jpg",
       ingredients: ["Refried Beans", "Melted Cheese"],
       price: 7.99,
     },
 
     {
       id: 3,
-      name: "Tacos El Dorado",
-      image: "",
+      name: "Tacos Dorados",
+      image:
+        "https://honest-food.net/wp-content/uploads/2019/03/tacos-dorados-500x500.jpg",
       ingredients: [
         "Fried Corn Tortilla",
         "Shredded Beef",
@@ -32,21 +34,24 @@ export default function Menu() {
     {
       id: 4,
       name: "Fish Tacos",
-      image: "",
+      image:
+        "https://kristineskitchenblog.com/wp-content/uploads/2023/05/fish-tacos-recipe-747-500x375.jpg",
       ingredients: ["Talapia", "Fresh Cabbage", "Mango Habenaro Salsa"],
       price: 10.99,
     },
     {
       id: 5,
       name: "Ceviche",
-      image: "",
+      image:
+        "https://lifeatthetable.com/wp-content/uploads/2023/06/Life-At-The-Table-Ceviche.jpeg",
       ingredients: ["Shrimp", "Pico De Gallo", "Lime", "Avocado", "Jalepeno"],
       price: 13.99,
     },
     {
       id: 6,
       name: "Tres Leche Cake",
-      image: "",
+      image:
+        "https://www.browneyedbaker.com/wp-content/uploads/2020/04/tres-leches-cake-11-square.jpg",
       ingredients: ["Milk", "Cream", "Strawberries"],
       price: 10.99,
     },
@@ -57,7 +62,7 @@ export default function Menu() {
       <div className="row">
         <div className="col-md-4">
           <div className="card mb-3">
-            <img src={item.image} className="card-img-top" alt="..." />
+            <img src={item.image} className="card-img-top" alt={item.name} />
             <div className="card-body">
               <h5 className="card-title">{item.name}</h5>
               <p className="card-text">
